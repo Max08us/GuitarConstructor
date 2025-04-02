@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Онлайн конструктор гитары: Конструктор</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link href="./new.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="top-bar">
+        <div class="logo-container">
+            <div class="logo_img">
+                <img src="images/logo2.jpg" alt="Логотип сайта">
+            </div>
+            <div class="text_logo">
+                <a>Онлайн конструктор гитары</a>
+            </div>
+        </div>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./about.html">Документация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="constructor_main">
+        <div class="main-container">
+            <div class="content-container">
+                <div class="guitar-container">
+                    <div id="body-area" class="guitar-part"></div>
+                    <div id="head-area" class="guitar-part"></div>
+                    <div id="neck-area" class="guitar-part"></div>
+                    <div class="guitar-shadow"><img src="images/guitar_shadow/guitar_shadow.png"></div>
+                </div>
+    
+                <div class="buttons-container">
+                    <div class="dropdown">
+                        <button class="dropdown-btn first-button">Корпус</button>
+                        <div class="dropdown-content" id="body-options"></div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropdown-btn third-button">Голова грифа</button>
+                        <div class="dropdown-content" id="head-options"></div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropdown-btn second-button">Гриф</button>
+                        <div class="dropdown-content" id="neck-options"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="calculator-container">
+            <h2>Калькулятор стоимости</h2>
+            <div class="calculator-content">
+                <div class="price-items">
+                    <div class="price-item">
+                        <span>Корпус:</span>
+                        <span id="body-price" class="price-value">0 ₽</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Голова грифа:</span>
+                        <span id="head-price" class="price-value">0 ₽</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Гриф:</span>
+                        <span id="neck-price" class="price-value">0 ₽</span>
+                    </div>
+                </div>
+                <div class="total-price">
+                    <span>Итого:</span>
+                    <span id="total-price" class="total-value">0 ₽</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bottom-bar hidden">
+        <div class="contact-info">
+            <p>Контактная информация:</p>
+            <ul>
+                <li>Телефон: +7 (964) 905-22-17</li>
+                <li>Email: info@gmail.com</li>
+                <li>Адрес: ул. Зиповская 7, г. Краснодар</li>
+            </ul>
+        </div>
+        <div class="social-links">
+            <p>Мы в социальных сетях:</p>
+            <ul>
+                <li><a href="https://vk.com" target="_blank">ВКонтакте</a></li>
+                <li><a href="https://telegram.org" target="_blank">Telegram</a></li>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const bottomBar = document.querySelector('.bottom-bar');
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+
+            if (scrollPosition + windowHeight >= documentHeight - 50) {
+                bottomBar.classList.add('visible');
+            } else {
+                bottomBar.classList.remove('visible');
+            }
+        });
+    </script>
+    <script type="text/javascript" src="./data.js"></script>
+    <script type="text/javascript" src="./new.js"></script>
+</body>
+</html>
+
+

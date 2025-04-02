@@ -1,0 +1,370 @@
+
+:root {
+    --main-color: #000;
+    --second-color: #333;
+    --third-color: #b4b4b4;
+}
+
+html, body, button {
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 21px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* Основные стили для верхней шторки */
+.top-bar {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo_img {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo_img img {
+    height: 100%;
+    width: auto;
+    max-height: 40px;
+}
+
+.text_logo a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation ul {
+    list-style: none;
+    margin-right: 40px;
+    padding: 0;
+    display: flex;
+}
+
+.navigation ul li {
+    margin: 0 15px;
+}
+
+.navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Остальные стили остаются такими же, меняем только часть с изображениями */
+.main-container {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-top: 80px;
+    /* margin-bottom: 50px; */
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+    margin-top: 0;
+}
+
+.guitar-container {
+    position: relative;
+    width: 450px;
+    height: 370px;
+    flex: 1;
+}
+
+.guitar-part {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    transition: all 0.7s ease;
+}
+
+.guitar-shadow img {
+    width: 100%;
+}
+
+/* Порядок z-index для правильного наложения */
+#body-area {
+    z-index: 1;
+}
+#head-area {
+    z-index: 2;
+}
+#neck-area {
+    z-index: 3;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Остальные стили остаются без изменений */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.dropdown-btn {
+    background-color: var(--main-color);
+    color: white;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 225px;
+    text-align: center;
+}
+
+.dropdown-btn:hover {
+    background-color:  var(--second-color);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f8f7f7;
+    min-width: 225px;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px;
+    scrollbar-width: thin;
+    scrollbar-color:  var(--main-color) #f1f1f1;
+}
+
+.dropdown-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 8px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 8px;
+}
+
+
+.dropdown-content div {
+    color: var(--main-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option-price {
+    color: var(--main-color);
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.dropdown-content div:hover .option-price {
+    color:  var(--second-color);
+}
+
+.dropdown-content div:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-content div.selected {
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
+
+.show {
+    display: block;
+}
+
+.calculator-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border: 2px solid #333;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-bottom: 125px;
+}
+
+.calculator-container h2 {
+    text-align: center;
+    color:  var(--main-color);
+    margin-bottom: 25px;
+}
+
+.calculator-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.price-items {
+    flex: 1;
+    max-width: 60%;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.price-item:last-child {
+    border-bottom: none;
+}
+
+.price-value {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.total-price {
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 30%;
+}
+
+.total-price span {
+    display: block;
+}
+
+.total-price span:first-child {
+    margin-bottom: 10px;
+}
+
+.total-value {
+    font-weight: bold;
+}
+
+.bottom-bar {
+    background-color: var(--second-color);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+
+.bottom-bar.visible {
+    transform: translateY(0);
+}
+
+.contact-info ul,
+.social-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info ul li,
+.social-links ul li {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info {
+    margin-left: 25px;
+}
+
+.social-links {
+    margin-right: 45px; 
+}
+
+.social-links a:hover {
+    color: var(--third-color);
+}
+
+main {
+    padding-top: 60px;
+    padding-bottom: 325px;
+}
+
+.constructor_main {
+    padding: 20px;
+    padding-bottom: 155px;
+    box-sizing: border-box;
+}
+
+.text_position {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+

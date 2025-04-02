@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Онлайн конструктор гитары: Конструктор</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link href="./new.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="top-bar">
+
+        <div class="logo-container">
+            <div class="logo_img">
+                <img src="images/logo2.jpg" alt="Логотип сайта">
+            </div>
+            <div class="text_logo">
+                <a>Онлайн конструктор гитары</a>
+            </div>
+        </div>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./about.html">Документация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="text_position">
+            <h1>Информация о нас:</h1>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+            <p>Text</p>
+        </div>   
+    </main>
+
+    <footer class="bottom-bar hidden">
+        <div class="contact-info">
+            <p>Контактная информация:</p>
+            <ul>
+                <li>Телефон: +7 (964) 905-22-17</li>
+                <li>Email: info@gmail.com</li>
+                <li>Адрес: ул. Зиповская 7, г. Краснодар</li>
+            </ul>
+        </div>
+        <div class="social-links">
+            <p>Мы в социальных сетях:</p>
+            <ul>
+                <li><a href="https://vk.com" target="_blank">ВКонтакте</a></li>
+                <li><a href="https://telegram.org" target="_blank">Telegram</a></li>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const bottomBar = document.querySelector('.bottom-bar');
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+
+            if (scrollPosition + windowHeight >= documentHeight - 50) {
+                bottomBar.classList.add('visible');
+            } else {
+                bottomBar.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>
+
