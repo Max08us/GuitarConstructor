@@ -4,62 +4,62 @@ const GuitarElements = {
 
     body: [
       {
-        name: "Корпус Чёрный",  
+        name: "Black: soft aged",  
         img: "images/body/Black-1.png",
         price: 5000
       },
       {
-        name: "Корпус Чёрный",
+        name: "Black: hardcore aged",
         img: "images/body/Black-2.png",
         price: 6500
       },
       {
-        name: "Корпус Чёрный",
+        name: "Black: masterpiece",
         img: "images/body/Black-3.png",
         price: 7000
       },
       {
-        name: "Корпус Красный",
+        name: "Red: soft aged",
         img: "images/body/Red-1.png",
         price: 3275
       },
       {
-        name: "Корпус Красный",
+        name: "Red: hardcore aged",
         img: "images/body/Red-2.png",
         price: 4000
       },
       {
-        name: "Корпус Красный",
+        name: "Red: masterpiece",
         img: "images/body/Red-3.png",
         price: 4750
       },
       {
-        name: "Корпус Санбёрст",
+        name: "Sunburst: soft aged",
         img: "images/body/Sunburst-1.png",
         price: 5500
       },
       {
-        name: "Корпус Санбёрст",
+        name: "Sunberst: hard aged",
         img: "images/body/Sunburst-2.png",
         price: 7400
       },
       {
-        name: "Корпус Санбёрст",
+        name: "Sunberst: masterpiece",
         img: "images/body/Sunburst-3.png",
         price: 10000
       },
       {
-        name: "Корпус Белый",
+        name: "Creme: soft aged",
         img: "images/body/White-1.png",
         price: 4250
       },
       {
-        name: "Корпус Белый",
+        name: "Creme: hard aged",
         img: "images/body/White-2.png",
         price: 5700
       },
       {
-        name: "Корпус Белый",
+        name: "Creme: masterpiece",
         img: "images/body/White-3.png",
         price: 8425
       }
