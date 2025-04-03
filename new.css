@@ -222,7 +222,7 @@ h3 {
 }
 
 .dropdown-content div:hover {
-    background-color: #f1f1f1;
+    background-color: #eee;
 }
 
 .dropdown-content div.selected {
