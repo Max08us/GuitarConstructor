@@ -6,32 +6,32 @@ const GuitarElements = {
       {
         name: "Black: soft aged",  
         img: "images/body/Black-1.png",
-        price: 5000
+        price: 6000
       },
       {
         name: "Black: hardcore aged",
         img: "images/body/Black-2.png",
-        price: 6500
+        price: 7500
       },
       {
         name: "Black: masterpiece",
         img: "images/body/Black-3.png",
-        price: 7000
+        price: 8000
       },
       {
         name: "VIP-Black: soft aged",  
         img: "images/body/VIP_Black-1.png",
-        price: 6000
+        price: 7000
       },
       {
         name: "VIP-Black: hardcore aged",
         img: "images/body/VIP_Black-2.png",
-        price: 7500
+        price: 8500
       },
       {
         name: "VIP-Black: masterpiece",
         img: "images/body/VIP_Black-3.png",
-        price: 8000
+        price: 9000
       },
       {
         name: "Sunburst: soft aged",
@@ -160,6 +160,16 @@ const GuitarElements = {
         name: "HSS: ebony",
         img: "images/neck/HSS_ebony.png",
         price: 8565
+      },
+      {
+        name: "SSS: VIP-ebony",
+        img: "images/neck/SSS_VIP_ebony.png",
+        price: 9565
+      },
+      {
+        name: "HSS: VIP-ebony",
+        img: "images/neck/HSS_VIP_ebony.png",
+        price: 10265
       }
     ]
   };

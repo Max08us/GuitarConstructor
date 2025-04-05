@@ -1,3 +1,7 @@
+Вот обновленный код для страницы about.html с описанием деталей гитары и примерами сборок:
+
+about.html:
+```html
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -132,36 +136,36 @@
             
             <div class="part-description">
                 <h2>Корпус гитары</h2>
-                <p>Корпус - это основная часть гитары, которая сильно влияет на её звучание и внешний вид. Мы предлагаем несколько вариантов отделки корпуса:</p>
+                <p>Корпус - это основная часть гитары, которая сильно влияет на ее звучание и внешний вид. Мы предлагаем несколько вариантов отделки корпуса:</p>
                 
                 <h3>Типы отделки:</h3>
                 <ul>
                     <li><strong>Soft Aged</strong> - легкое состаривание, создающее эффект "винтажности" без сильных повреждений</li>
                     <li><strong>Hard Aged</strong> - интенсивное состаривание с заметными потертостями и царапинами</li>
-                    <li><strong>Masterpiece</strong> - премиальное состаривание с дополнительными декоративными элементами</li>
+                    <li><strong>Masterpiece</strong> - премиальная отделка с идеальной поверхностью и дополнительными декоративными элементами</li>
                 </ul>
                 
                 <h3>Цветовые варианты:</h3>
                 <div class="material-comparison">
                     <div class="material-card">
                         <h4>Black</h4>
-                        <p>Классический чёрный цвет с глубоким глянцевым покрытием.</p>
+                        <p>Классический черный цвет с глубоким глянцевым покрытием. Обеспечивает сбалансированное звучание.</p>
                     </div>
                     <div class="material-card">
                         <h4>VIP Black</h4>
-                        <p>Улучшенная версия чёрного цвета с более толстым слоем лака для увеличенного сустейна.</p>
+                        <p>Улучшенная версия черного цвета с более толстым слоем лака для увеличенного сустейна.</p>
                     </div>
                     <div class="material-card">
                         <h4>Sunburst</h4>
-                        <p>Градиент от светлого центра к тёмным краям. Бессмертная классика.</p>
+                        <p>Градиент от темного центра к светлым краям. Добавляет теплые тона в звучание.</p>
                     </div>
                     <div class="material-card">
                         <h4>Creme</h4>
-                        <p>Кремовый цвет с полуматовой отделкой. Придаёт мягкости ко внешнему виду.</p>
+                        <p>Кремовый цвет с полуматовой отделкой. Дает мягкое, округлое звучание.</p>
                     </div>
                     <div class="material-card">
                         <h4>Red</h4>
-                        <p>Яркий красный цвет. Добавляет визуальной агрессии.</p>
+                        <p>Яркий красный цвет. Добавляет агрессии в звук, особенно в верхнем диапазоне.</p>
                     </div>
                 </div>
             </div>
@@ -172,15 +176,15 @@
                 
                 <h3>Конфигурации:</h3>
                 <ul>
-                    <li><strong>SSS</strong> - три сингла, легендарное "стеклянное" звучание Стратокастера.</li>
-                    <li><strong>HSS</strong> - хамбакер и два сингла, универсальное решение, дающее большой звуковой диапозон. Используется на гитарах типа Суперстрат.</li>
+                    <li><strong>SSS</strong> - три сингла, универсальное звучание</li>
+                    <li><strong>HSS</strong> - хамбакер и два сингла, более мощный звук</li>
                 </ul>
                 
                 <h3>Материалы накладки:</h3>
                 <div class="material-comparison">
                     <div class="material-card">
                         <h4>Rosewood</h4>
-                        <p>Классический выбор с тёплым, сбалансированным звучанием. Хорошо подходит для большинства стилей.</p>
+                        <p>Классический выбор с теплым, сбалансированным звучанием. Хорошо подходит для большинства стилей.</p>
                     </div>
                     <div class="material-card">
                         <h4>VIP Rosewood</h4>
@@ -192,15 +196,11 @@
                     </div>
                     <div class="material-card">
                         <h4>Maple</h4>
-                        <p>Клён дает чёткое, яркое звучание с хорошей атакой. Идеален для скоростных партий.</p>
+                        <p>Ясень дает четкое, яркое звучание с хорошей атакой. Идеален для скоростных партий.</p>
                     </div>
                     <div class="material-card">
                         <h4>Ebony</h4>
-                        <p>Чёрное дерево - премиальный вариант с плотным, насыщенным звуком и длительным сустейном.</p>
-                    </div>
-                    <div class="material-card">
-                        <h4>VIP Ebony</h4>
-                        <p>Высококачественная древесина чёрного дерева с более плотной структурой для ещё более доительного сустейна.</p>
+                        <p>Эбеновое дерево - премиальный вариант с плотным, насыщенным звуком и длительным сустейном.</p>
                     </div>
                 </div>
             </div>
@@ -217,56 +217,56 @@
                 
                 <div class="presets-grid">
                     <div class="preset-card">
-                        <div class="preset-image" style="background-image: url('images/neck/SSS_rosewood.png'), url('images/head/Standart.png'), url('images/body/Black-1.png');"></div>
+                        <div class="preset-image" style="background-image: url('images/body/Black-3.png'), url('images/head/Black.png'), url('images/neck/SSS_rosewood.png');"></div>
                         <div class="preset-info">
                             <div class="preset-title">Classic Black</div>
-                            <div class="preset-description">Чёрная глянцевая гитара с палисандровой накладкой грифа и синглами. Идеальна для блюза и рока.</div>
-                            <div class="preset-price">12 375 ₽</div>
+                            <div class="preset-description">Черная гитара с розовым деревом и синглами. Идеальна для блюза и рока.</div>
+                            <div class="preset-price">13 700 ₽</div>
                         </div>
                     </div>
                     
                     <div class="preset-card">
-                        <div class="preset-image" style="background-image: url('images/neck/HSS_VIP_rosewood.png'), url('images/head/Sunburst.png'), url('images/body/Sunburst-3.png');"></div>
+                        <div class="preset-image" style="background-image: url('images/body/Sunburst-3.png'), url('images/head/Sunburst.png'), url('images/neck/HSS_VIP_rosewood.png');"></div>
                         <div class="preset-info">
                             <div class="preset-title">Vintage Sunburst</div>
-                            <div class="preset-description">Винтажный звук хамбакера и VIP палисандровая накладка грифа.</div>
-                            <div class="preset-price">19 200 ₽</div>
+                            <div class="preset-description">Винтажный звук с хамбакером и VIP розовым деревом.</div>
+                            <div class="preset-price">18 300 ₽</div>
                         </div>
                     </div>
                     
                     <div class="preset-card">
-                        <div class="preset-image" style="background-image:  url('images/neck/SSS_maple.png'), url('images/head/Creme.png'), url('images/body/Creme-2.png');"></div>
+                        <div class="preset-image" style="background-image: url('images/body/Creme-2.png'), url('images/head/Creme.png'), url('images/neck/SSS_maple.png');"></div>
                         <div class="preset-info">
                             <div class="preset-title">Cream Dream</div>
-                            <div class="preset-description">Мягкое звучание винтажной кремовой гитары с кленовым грифом.</div>
-                            <div class="preset-price">12 925 ₽</div>
+                            <div class="preset-description">Мягкое звучание кремовой гитары с ясеневым грифом.</div>
+                            <div class="preset-price">15 200 ₽</div>
                         </div>
                     </div>
                     
                     <div class="preset-card">
-                        <div class="preset-image" style="background-image: url('images/neck/HSS_VIP_ebony.png'), url('images/head/Black.png'), url('images/body/VIP_Black-1.png');"></div>
+                        <div class="preset-image" style="background-image: url('images/body/VIP_Black-1.png'), url('images/head/Black.png'), url('images/neck/HSS_ebony.png');"></div>
                         <div class="preset-info">
                             <div class="preset-title">Premium Black</div>
-                            <div class="preset-description">Премиальная сборка, гриф с накладкой из чёрного дерева и VIP отделка корпуса.</div>
-                            <div class="preset-price">21 265 ₽</div>
+                            <div class="preset-description">Премиальная сборка с эбеновым грифом и VIP черным корпусом.</div>
+                            <div class="preset-price">22 400 ₽</div>
                         </div>
                     </div>
                     
                     <div class="preset-card">
-                        <div class="preset-image" style="background-image: url('images/neck/HSS_VIP_ebony.png'), url('images/head/Red.png'), url('images/body/Red-1.png');"></div>
+                        <div class="preset-image" style="background-image: url('images/body/Red-2.png'), url('images/head/Red.png'), url('images/neck/HSS_pau_ferro.png');"></div>
                         <div class="preset-info">
                             <div class="preset-title">Red Rocker</div>
                             <div class="preset-description">Агрессивный звук для хард-рока и метала.</div>
-                            <div class="preset-price">16 240 ₽</div>
+                            <div class="preset-price">14 700 ₽</div>
                         </div>
                     </div>
                     
                     <div class="preset-card">
-                        <div class="preset-image" style="background-image: url('images/neck/SSS_pau_ferro.png'), url('images/head/Standart.png'), url('images/body/Sunburst-1.png');"></div>
+                        <div class="preset-image" style="background-image: url('images/body/Sunburst-1.png'), url('images/head/Standart.png'), url('images/neck/SSS_rosewood.png');"></div>
                         <div class="preset-info">
                             <div class="preset-title">Beginner's Choice</div>
                             <div class="preset-description">Бюджетный вариант для начинающих с хорошим звуком.</div>
-                            <div class="preset-price">10 500 ₽</div>
+                            <div class="preset-price">11 800 ₽</div>
                         </div>
                     </div>
                 </div>
@@ -309,4 +309,24 @@
     </script>
 </body>
 </html>
+```
 
+Этот код добавляет на страницу about.html:
+
+1. Подробное описание деталей гитары:
+   - Раздел о корпусе с описанием типов отделки (soft aged, hard aged, masterpiece) и цветовых вариантов
+   - Раздел о грифе с описанием конфигураций (SSS, HSS) и материалов накладки
+   - Раздел о голове грифа
+
+2. Примеры сборок:
+   - 6 готовых пресетов с изображениями, названиями, описаниями и ценами
+   - Каждый пресет показывает комбинацию корпуса, грифа и головы грифа
+   - Сетка пресетов адаптируется под размер экрана
+
+3. Стили:
+   - Четкое разделение информации по секциям
+   - Карточки для сравнения материалов
+   - Адаптивный дизайн для разных устройств
+   - Эффекты при наведении на пресеты
+
+Все стили добавлены непосредственно в файл about.html, чтобы не перегружать основной CSS-файл. Изображения используются те же, что и в конструкторе.

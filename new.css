@@ -162,10 +162,12 @@ h3 {
     cursor: pointer;
     width: 225px;
     text-align: center;
+     transition: transform 0.3s;
 }
 
 .dropdown-btn:hover {
     background-color:  var(--second-color);
+    transform: scale(1.05);
 }
 
 .dropdown-content {
@@ -242,7 +244,7 @@ h3 {
     border: 2px solid #333;
     border-radius: 15px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    margin-bottom: 125px;
+    margin-bottom: 130px;
 }
 
 .calculator-container h2 {
@@ -285,6 +287,14 @@ h3 {
     border-radius: 8px;
     text-align: center;
     min-width: 30%;
+}
+
+.total-price {
+    transition: transform 0.3s;
+}
+
+.total-price:hover {
+    transform: scale(1.05);
 }
 
 .total-price span {
