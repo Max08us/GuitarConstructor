@@ -7,6 +7,40 @@ let currentSelection = {
     neck: GuitarElements.neck[0]
 };
 
+// Добавьте в начало файла массив с путями к звукам
+const guitarSounds = [
+    'sounds/sound-1.mp3',
+    'sounds/sound-2.mp3',
+    'sounds/sound-3.mp3',
+    'sounds/sound-4.mp3',
+    'sounds/sound-5.mp3',
+    'sounds/sound-6.mp3',
+    'sounds/sound-7.mp3',
+    'sounds/sound-8.mp3',
+    'sounds/sound-9.mp3'
+  ];
+  
+let lastPlayedTime = 0;
+const minPlayDelay = 4000; // мс между звуками
+
+function playRandomSound() {
+  const now = Date.now();
+  if (now - lastPlayedTime > minPlayDelay) {
+    const randomIndex = Math.floor(Math.random() * guitarSounds.length);
+    const sound = new Audio(guitarSounds[randomIndex]);
+    sound.play().catch(e => console.log("Autoplay prevented:", e));
+    lastPlayedTime = now;
+  }
+}
+
+// Предзагрузка звуков
+function preloadSounds() {
+    guitarSounds.forEach(soundPath => {
+      new Audio(soundPath); // Создаем объекты Audio для предзагрузки
+    });
+}
+
+// Инициализация страницы
 function initPage() {
     populateDropdown('body-options', GuitarElements.body, 'body');
     populateDropdown('head-options', GuitarElements.head, 'head');
@@ -18,6 +52,20 @@ function initPage() {
     
     updatePrices();
     initEventHandlers();
+  
+    // Получаем область грифа
+    // Получаем область грифа
+    const neckArea = document.getElementById('neck-area');
+  
+    // Обработчик нажатия ЛЕВОЙ кнопки мыши на грифе
+    neckArea.addEventListener('mousedown', (e) => {
+     if (e.button === 0) { // Проверяем, что это левая кнопка (0 - левая)
+       playRandomSound();
+     }
+    });
+ 
+    // Предзагрузка звуков
+    preloadSounds();
 }
 
 function populateDropdown(dropdownId, elements, type) {

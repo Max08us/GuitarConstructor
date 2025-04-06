@@ -46,6 +46,17 @@
         margin: 0 auto;
     }
 
+    .calculator-content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: normal !important;
+    }
+
+    .price-items {
+        flex: 1;
+    }
+
     /* Стили для страницы документации (about.html) */
     main {
         padding-top: 180px; /* Большой отступ от шапки */
@@ -96,6 +107,18 @@
 }
 
 @media (max-width: 480px) {
+    
+    .calculator-content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: normal !important;
+    }
+
+    .price-items {
+        flex: 1;
+    }
+
     .constructor_main {
         padding-top: 170px;
         padding-bottom: 110px;
@@ -244,8 +267,13 @@ h3 {
     transition: all 0.7s ease;
 }
 
-.guitar-shadow img {
-    width: 100%;
+.guitar-shadow {
+    height: 100%;
+    background-image: url(images/guitar_shadow/guitar_shadow.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 220px;
 }
 
 /* Порядок z-index для правильного наложения */
@@ -498,3 +526,11 @@ main {
     text-align: center;
 }
 
+#neck-area {
+    cursor: crosshair; /* Меняем курсор при наведении */
+    user-select: none; /* Запрещаем выделение текста при перетаскивании */
+  }
+  
+  #neck-area:active {
+    opacity: 0.9; /* Легкое затемнение при зажатии */
+  }
