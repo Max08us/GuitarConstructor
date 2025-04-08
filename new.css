@@ -12,6 +12,7 @@
         left: 0;
         right: 0;
         z-index: 1000;
+        width: inherit !important;
     }
 
     .logo-container {
@@ -32,10 +33,13 @@
         margin: 8px 12px;
     }
 
+    .info-section {
+        margin-top: 25px !important;
+    }
+
     /* Стили для страницы конструктора (index.html) */
     .constructor_main {
-        padding-top: 180px; /* Значительно увеличенный отступ от шапки */
-        padding-bottom: 120px; /* Увеличенный отступ для нижней шторки */
+        margin-bottom: 125px;
     }
 
     .content-container {
@@ -44,6 +48,19 @@
         align-items: center;
         width: 100%;
         margin: 0 auto;
+    }
+    
+    .guitar-container {
+        width: 395px !important;
+    }
+
+    .dropdown {
+        position: inherit !important;
+    }
+
+    .dropdown-content {
+        left: 55px;
+        right: 55px;
     }
 
     .calculator-content {
@@ -61,11 +78,11 @@
     main {
         padding-top: 180px; /* Большой отступ от шапки */
         padding-bottom: 120px; /* Отступ для нижней шторки */
+        margin-bottom: 54px;
     }
 
     /* Стили для нижней шторки */
     .bottom-bar {
-        flex-direction: column;
         padding: 20px 15px;
         align-items: center;
         text-align: center;
@@ -90,7 +107,8 @@
 
     .contact-info:last-child,
     .social-links:last-child {
-        margin-bottom: 0;
+        margin-bottom: 116px;
+        width: 100%;
     }
 
     .contact-info ul,
@@ -107,7 +125,24 @@
 }
 
 @media (max-width: 480px) {
-    
+
+    .info-section {
+        margin-top: 25px !important;
+    }
+
+    .guitar-container {
+        width: 395px !important;
+    }
+
+    .dropdown {
+        position: inherit !important;
+    }
+
+    .dropdown-content {
+        left: 55px;
+        right: 55px;
+    }
+
     .calculator-content {
         display: flex;
         justify-content: space-between;
@@ -120,17 +155,18 @@
     }
 
     .constructor_main {
-        padding-top: 170px;
-        padding-bottom: 110px;
+        margin-bottom: 115px;
     }
 
     main {
         padding-top: 170px;
         padding-bottom: 110px;
+        margin-bottom: 44px;
     }
 
     .top-bar {
         padding: 15px 8px;
+        width: inherit !important;
     }
 
     .navigation ul li {
