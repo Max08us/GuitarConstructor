@@ -39,12 +39,12 @@ const GuitarElements = {
         price: 5500
       },
       {
-        name: "Sunberst: hard aged",
+        name: "Sunburst: hard aged",
         img: "images/body/Sunburst-2.png",
         price: 7400
       },
       {
-        name: "Sunberst: masterpiece",
+        name: "Sunburst: masterpiece",
         img: "images/body/Sunburst-3.png",
         price: 10000
       },
