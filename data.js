@@ -83,8 +83,8 @@ const GuitarElements = {
 
     head: [
       {
-        name: "Standart",
-        img: "images/head/Standart.png",
+        name: "Standard",
+        img: "images/head/Standard.png",
         price: 2000
       },
       {
